@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* צבע רקע לדף כולו */
+    color: #333;
+}
+
+.calculator-container {
+    width: 350px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    direction: ltr;
+    text-align: left;
+}
+
+input[type="text"]::placeholder {
+    color: #7f8c8d;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(52, 152, 219, 0.4);
+}
+
+button:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 6px 15px rgba(52, 152, 219, 0.6);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* עיצוב כפתור ה-clear */
+button#clear {
+    background-color: #e74c3c; 
+    box-shadow: 0px 4px 10px rgba(231, 76, 60, 0.4); 
+    margin-top: 10px;
+}
+
+button#clear:hover {
+    background-color: #c0392b; 
+    box-shadow: 0px 6px 15px rgba(231, 76, 60, 0.6);
+}
+
+
